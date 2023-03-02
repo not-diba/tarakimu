@@ -263,6 +263,10 @@ h6,
   .navbar ul {
     display: none;
   }
+
+  #header .logo h1 {
+    font-size: 25px;
+  }
 }
 
 .navbar-mobile {
