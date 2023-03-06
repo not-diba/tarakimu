@@ -316,7 +316,7 @@
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" id="message_body" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <div class="error-message"></div>
@@ -434,7 +434,8 @@
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
-    var message_body = document.getElementById("message").value;
+    var message_body = document.getElementById("message_body").value;
+    console.log(message_body);
 
     console.log("Here");
     Email.send({
