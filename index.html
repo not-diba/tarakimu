@@ -436,6 +436,7 @@
     var subject = document.getElementById("subject").value;
     var message_body = document.getElementById("message").value;
 
+    console.log("Here");
     Email.send({
       SecureToken: "9fdf8b09-24a1-4836-901f-23c9e6181cc7",
       To: "tarakimutech@outlook.com",
@@ -445,5 +446,6 @@
     }).then(
       message => alert(message)
     );
+    console.log("Here Again");
   };
 </script>
