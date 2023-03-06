@@ -434,14 +434,14 @@
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
+    var message_body = document.getElementById("message").value;
 
     Email.send({
       SecureToken: "9fdf8b09-24a1-4836-901f-23c9e6181cc7",
       To: "tarakimutech@outlook.com",
       From: email,
       Subject: subject,
-      Body: message,
+      Body: message_body,
     }).then(
       message => alert(message)
     );
