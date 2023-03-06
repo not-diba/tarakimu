@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
 }
@@ -31,7 +31,11 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+p {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -641,6 +645,7 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -685,6 +690,7 @@ section {
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .faq .faq-list .icon-show {
@@ -714,6 +720,7 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info {
+  font-family: 'Raleway', sans-serif;
   border-top: 3px solid var(--red);
   border-bottom: 3px solid var(--red);
   padding: 30px;
