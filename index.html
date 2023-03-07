@@ -319,8 +319,9 @@
                 <textarea class="form-control" name="message" id="message_body" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div id="loading" class="loading">Loading</div>
+                <div id="error_message" class="error-message"></div>
+                <div id="sent_message" class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
             </div>
@@ -428,23 +429,4 @@
     }
   };
 </script>
-
-<script type="text/javascript">
-  function sendEmail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message_body = document.getElementById("message_body").value;
-    console.log(message_body);
-
-    Email.send({
-      SecureToken: "8334dbd3-9ee0-4717-a6a1-980ac90acc59",
-      To: "tarakimutech@outlook.com",
-      From: "tarakimutech@outlook.com",
-      Subject: subject,
-      Body: message_body + " " + email,
-    }).then(
-      message => alert(message)
-    );
-  };
-</script>
+<script src="assets/js/send_email.js"></script>
