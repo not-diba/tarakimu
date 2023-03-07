@@ -437,16 +437,14 @@
     var message_body = document.getElementById("message_body").value;
     console.log(message_body);
 
-    console.log("Here");
     Email.send({
-      SecureToken: "9fdf8b09-24a1-4836-901f-23c9e6181cc7",
+      SecureToken: "8334dbd3-9ee0-4717-a6a1-980ac90acc59",
       To: email,
-      From: "notaplaygroundtest@gmail.com",
+      From: "tarakimutech@outlook.com",
       Subject: subject,
       Body: message_body + " " + email,
     }).then(
       message => alert(message)
     );
-    console.log("Here Again");
   };
 </script>
